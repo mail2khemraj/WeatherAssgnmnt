@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Weather Validation">
+
+	<parameter name="baseURL" value="https://ndtv.com" />
+	<parameter name="cityName" value="Jaipur" />
+	<parameter name="apiBaseURI" value="https://api.openweathermap.org/data/2.5/" />
+	<parameter name="appID" value="2b1fd2d7f77ccf1b7de9b441571b39b8" />
+	<parameter name="maxTempDiff" value="2" />
+	
+	<test name="UI and API check">
+		<classes>
+			<class name="tests.TempValidation" />
+		</classes>
+	</test>
+</suite>
